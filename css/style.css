@@ -6,7 +6,8 @@
 body{
     width: 1600px;
     height: 6200px;
-    background-color: aqua;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* css of header*/
 header{
@@ -51,11 +52,11 @@ header .hd-bg{
     padding: 60px 0px 30px ;
 }
 .hd-login h2{
-    font-size: 20px;
+    font-size: 34px;
     line-height: 1.75;
 }
 .hd-login p{
-    font-size: 12px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.302);
     line-height: 1.2;
     margin: 20px;
@@ -83,25 +84,310 @@ header .hd-bg{
     padding: 15px;
     
 }
-
-
-  
-
+/* CSS for html landing page section */
 .land-sec{
+    box-sizing: border-box;
     height: 710px;
-    background-color: salmon;   
-}
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5%;
 
-.banner-sec{
+}
+.land-sec h4{
+    font-size: 14px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    line-height: 2;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.land-sec .lan-h2{
+    font-size: 42px;
+    font-weight: lighter;
+    width: 657px;
+    height: 93px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.land-type{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    
+
+}
+.land-type section{
+    width: 500px;
+    height: 144px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: start;
+}
+.land-mobe  .icon{
+    font-size: 50px;
+    flex: 100%;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.land-mobe h2{
+    margin-bottom: 20px;
+}
+.land-mobe  p{
+    width: 450px;
+}
+/* banner with section */
+.banner-sec {
+    color: white;
+    background: url(../images/图层\ 2.jpg);
     height: 800px;
-    background-color: seagreen;
+}
+.banner-bg{
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.banner-right{
+    width: 645px;
+    height: 600px;
+    background: url(../images/IPad.png);
+    position: relative;
+}
+.banner-right img{
+    height: 535px;
+    width: 585px;
+    position: absolute;
+    top: 32px;
+    left: 60px;
+}
+.banner-left{
+    width: 645px;
+    height: 600px;
+    margin-right: 20px;
 }
 
+.banner-left H2
+{
+    width: 475px;
+    font-size: 42px;
+    font-weight: lighter;
+    margin-bottom: 40PX;
+}
+.banner-left p{
+    width: 475px;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 40PX;
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner-left input[type="button"]
+{
+    letter-spacing:2px;
+    border-radius: 4px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+    color:rgba(255, 255, 255, 0.9);;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 40px;
+}
+.banner-left input[type="button"]:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+}
+/* css for main */
 main{
     height: 3300px;
-    background-color: tan;
+}
+.main-header{
+    text-align: center;
+    height: 275px;
+    padding: 100px;
+}
+.main-header h2
+{
+    font-size: 42px;
+    font-weight: lighter;
+    margin-bottom: 40PX;
+}
+.mh{
+    display: flex;
+    justify-content: space-between;
+}
+.mh-art{
+
+    margin-right: 100px;
+    width: 321px;
+    text-align: center;
+}
+main hr{
+    border: none;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    z-index: 2;
+}
+.main-middle{
+    padding: 150px;
+    background-color: white;
+}
+.mm{
+    width: 1140px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+.mm-sec{
+    width: 570px;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.mm section[class$="mm-text"]{
+    box-sizing: border-box;
+    width: 570px;
+    padding: 100px;
+}
+.mm-sec p,.mm-sec h3{
+    margin-bottom: 40px;
+    width: 370px;
 }
 
-  
+/* main leg */
+.sec-leg{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sec-leg h2{
+    font-size: 42px;
+    font-weight: lighter;
+    margin: 40px auto 30px auto ;
+}
+.sec-leg p{
+    font-size: 24px;
+    font-weight: lighter;
+    width: 840px;
+    margin: 0 auto 30px auto ;
+}
+.sec-leg .sl{
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.sl-art{
+    width: 470px;
+    height: 340px;
+    margin: 30px 30px 0 0;
+}
+/* main footer */
+.main-footer{
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.main-footer form{
+    width: 470px;
+    height: 560px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    /* justify-content: space-around; */
+}
+.main-footer form *{
+    margin: 18px;
+}
+.mf-left h2{
+    text-transform: uppercase;
+    /* font-weight: lighter;  */
+}
+.mf-art input[type="text"],.mf-art input[type="email"],.mf-art textarea[id="msg"]{
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 360px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+.mf-art textarea[id="msg"]{
+    height: 144px;
+}
+.mf-art button[type="submit"]
+{
+    color: white;
+    text-align: center;
+    width: 370px;
+    height: 50px;
+    background-color: black;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+.mf-right{
+    padding: 100px;
+}
+.mf-right h2{
+    font-size: 44px;
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+.mf-right p:first-of-type{
+    width: 360px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.mf-right p{
+    margin-bottom: 40px;
+}
+.mf-right p i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 10px;
+}
 
-  
+footer{
+    background-color: black;
+    color: white;
+    padding: 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+footer a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.3)
+}
+footer a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+footer p{
+    margin-bottom: 20px;
+}
+footer div h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.enjoyYourLife p{
+    width: 270px;
+    color:rgba(255, 255, 255, 0.3)
+}
+.enjoyYourLife ul li{
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+}
