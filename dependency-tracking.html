@@ -1,0 +1,28 @@
+<script>
+  //依赖跟踪收集 subscribers 依赖存储
+  window.Dep = class Dep {
+    constructor() {
+      this.subscribers = new Set();
+    }
+    //添加依赖
+    depend() {
+      if (activeUpdate) {
+        this.subscribers.add(activeUpdate);
+      }
+    }
+    // 执行依赖
+    notify() {
+      this.subscribers.forEach((subscriber) => subscriber());
+    }
+  };
+  let activeUpdate;
+
+  function autorun(update) {
+    function wrappedUpdate() {
+      activeUpdate = wrappedUpdate;
+      update();
+      activeUpdate = null;
+    }
+    wrappedUpdate();
+  }
+</script>
